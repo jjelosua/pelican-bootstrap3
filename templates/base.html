@@ -104,7 +104,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="{{ SITEURL }}/" class="navbar-brand">
-                {% if SITELOGO %}<img src="{{ SITEURL }}/{{ SITELOGO }}" width="{{ SITELOGO_SIZE }}"/> {% endif %}
+                {% if SITE_GLYPHICON %}<span class="glyphicon {{SITE_GLYPHICON}}" aria-hidden="true"></span> {% endif %}
                 {% if not HIDE_SITENAME %}{{ SITENAME }}{% endif %}
             </a>
         </div>
